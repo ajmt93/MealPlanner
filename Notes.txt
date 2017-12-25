@@ -1,3 +1,0 @@
-mealplan routes needs to be finished up.
-/mealplan/recipe
-/mealplan/recipe/:recipeId

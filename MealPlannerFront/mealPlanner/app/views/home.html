@@ -1,0 +1,22 @@
+
+    <div class="container">
+      Sadly, this part isn't complete. Please see "My Recipes" for the complete portion
+      <div ng-repeat="weekday in week">
+        <div class="row row-content">
+            <div class="col-xs-3 col-sm-12">
+                <h2>{{weekday}}</h2>
+            </div>
+        </div>
+        <div class="row row-content">
+          <div class="col-xs-3 col-sm-10">
+            <div ng-repeat = "recipe in mealplans[0].recipes">
+              <div ng-if = "recipe.day == $index">
+                {{recipe.recipe.name}}
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-3 col-sm-1">
+            <a ng-click="editDay($index)" class="glyphicon glyphicon-pencil"></a>
+        </div>
+    </div>
+  </div>

@@ -1,0 +1,26 @@
+<div class="ngdialog-message">
+  <form ng-submit="doAction()">
+    <div class="col-xs-12">
+      <div class="form-group">
+        <h2>{{week[day]}}</h2>
+      </div>
+    </div>
+    <div class="">
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="form-group">
+              <label for="ingredients">Today</label>
+              <textarea rows=10 class="form-control input-sm" id="ingredients" placeholder={{recipe.ingredients}} ng-model="recipe.ingredients"></textarea>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="form-group">
+              <label for="instructions">My meals</label>
+              <textarea rows=10 class="form-control input-sm" id="instructions" placeholder={{recipe.instructions}} ng-model="recipe.instructions"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-info btn-sm">Submit</button>
+  </form>
+</div>
